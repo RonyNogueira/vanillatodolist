@@ -1,0 +1,82 @@
+
+body{
+    color: rgb(29, 29, 29);
+}
+
+.container{
+    max-width: 480px;
+    position: relative;
+    height: 100vh;
+    box-shadow: 1px 2px 12px -1px #cacaca;
+
+}
+
+.header-title{
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    color: rgb(29, 29, 29);
+    box-shadow: 1px 2px 12px -1px #cacaca;
+    margin-bottom: 10px;
+    
+}
+
+.header-title h2{
+    font-size: 1.5rem;
+}
+
+.header-title h3{
+    font-size: 0.7rem;
+}
+
+.list-bg{
+    background-color: #f7f7f7;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.list-item .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    background: transparent;
+}
+
+.list-item .info h3{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.list-item .info  p{
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-new-list{
+    background: linear-gradient(to right, #512DA8, #673AB7); 
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    bottom: 150px;
+    right: 15px;
+}
+
+.modal-body label{
+    width: 100%;
+}

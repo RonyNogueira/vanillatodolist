@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="row header-title">
+            <div class="col-lg-6 col-6">
+                <h2>Tarefas</h2> 
+            </div>
+            <div class="col-lg-6 col-6">
+                <h3>Concluidas 2/8</h3> 
+            </div>
+        </div>
+        <div class="row p-2">
+            <div id="show-list" class="col-lg-12 list-bg">
+                    <!-- data from localstorage -->
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-new-list" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i></button>
+    </div>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nova tarefa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <form id="formList">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-lg-12 col-12">
+                    <div class="mb-3">
+                        <label for="">
+                            Titulo
+                            <input type="text" class="form-control" id="teste" name="title">
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="">
+                            Data
+                            <input type="date" class="form-control" name="date">
+                        </label>                   
+                     </div>
+
+                    <div class="mb-3">
+                        <label for="">
+                            Tempo
+                            <input type="time" class="form-control" name="time">
+                        </label>                   
+                     </div>
+
+                    
+                     <div class="mb-3">
+                        <label for="">
+                            Descrição
+                            <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                        </label>                   
+                     </div>
+
+                  </div>
+              </div>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="create-list" class="btn btn-secondary" data-bs-dismiss="modal">criar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/generateId.js"></script>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
